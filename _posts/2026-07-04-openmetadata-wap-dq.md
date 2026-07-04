@@ -7,8 +7,6 @@ tags:
   - WAP
   - Data Quality
   - Iceberg
-  - Spark
-  - Airflow
 ---
 
 ## 내가 생각한 이상적인 DQ 흐름
@@ -172,3 +170,6 @@ Pipeline / Airflow / Spark
 현재 OpenMetadata 1.12.6에서는 TestSuite 실행 시 런타임 Iceberg branch/ref를 넘기는 기능이 직접 지원되지 않는다. 그래서 당장은 파이프라인에서 test case를 가져와 외부에서 실행하고, 결과를 다시 OpenMetadata에 기록하는 방식이 현실적인 대안으로 보인다.
 
 WAP DQ의 핵심은 DQ를 사후 알림이 아니라 publish gate로 사용하는 것이다. 잘못된 데이터가 main에 올라간 뒤 발견하는 것보다, 애초에 main으로 올라가지 못하게 막는 것이 더 안정적인 데이터 플랫폼에 가깝다.
+
+
+<추후에 예시 코드들도 같이 추가하기>
